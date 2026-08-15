@@ -1,1 +1,16 @@
 /* Add CSS Styling */
+
+.clickme{
+    background-color: hsl(0, 0%, 0%);
+    color: rgb(255, 255, 255);
+}
+
+.dontclick{
+    background-color: yellow;
+}
+
+
+.clickme, .dontclick{
+    font-size: 28px;
+    font-family: Helvetica, Times New Roman, sans-serif;
+}
