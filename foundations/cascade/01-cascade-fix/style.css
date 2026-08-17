@@ -8,7 +8,9 @@ body {
   font-weight: 800;
 }
 
-.small-para {
+/* Here i noticed the .small para works in two way either current where i have chained the full class or 
+if .para class is move above .small-para which applies rule order both working */
+.para.small-para {
   font-size: 14px;
   font-weight: 800;
 }
@@ -17,7 +19,9 @@ body {
   font-size: 22px;
 }
 
-.confirm {
+/* Again both way work via button class is in order first above .confirm which applies rule order or by chaining id or class to .confirm class  */
+
+.confirm.button {
   background: green;
   color: white;
   font-weight: bold;
@@ -29,7 +33,8 @@ body {
   font-size: 20px;
 }
 
-.child {
+/* Here again we explicitly can use descendant combinator or chain without space to make it work using specificity */
+.text .child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
