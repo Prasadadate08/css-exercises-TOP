@@ -22,6 +22,10 @@
 .header {
   background-color: #393f4d;
   grid-column: span 2;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  /* grid-template-columns: subgrid; */
+  align-items: center;
 }
 
 .nav ul,
@@ -33,6 +37,8 @@
 .sidebar {
   background-color: #C50208;
   grid-row: 2/4;
+  display: grid;
+  gap: 50px;
 }
 
 .sidebar .photo {
@@ -51,8 +57,23 @@
   font-weight: normal;
 }
 
+.menu {
+  display: grid;
+  ul {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: span 4;
+  }
+}
+
 .nav {
   background-color: #C50208;
+  display: grid;
+  ul {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: span 3;
+  }
 }
 
 .nav ul li {
